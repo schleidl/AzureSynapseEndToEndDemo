@@ -6,7 +6,7 @@
 			"type": "LinkedServiceReference",
 			"parameters": {
 				"StorageWithSaSUrl": {
-					"value": "@concat('https://medicaldl.blob.core.windows.net/source?SAS=REDACTED')",
+					"value": "@concat('https://synthetichealth.github.io/synthea-sample-data/downloads/latest/synthea_sample_data_csv_latest.zip')",
 					"type": "Expression"
 				}
 			}
@@ -26,6 +26,9 @@
 					"type": "Expression"
 				},
 				"container": "source"
+			},
+			"compression": {
+				"type": "ZipDeflate"
 			}
 		}
 	}
